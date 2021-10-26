@@ -3832,7 +3832,7 @@
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "246ff4b123142ef0a1ad6e8cd19039a9c69ed5de53fd1ee6889db344320afd6c",
+        "version": "c896a269d2870956d932449ce7ff8aff5e62af5b26715e6a6d590469dc9aaa14",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -6931,6 +6931,8 @@
       ],
       "../src/main.ts": [
         "../node_modules/@nestjs/core/index.d.ts",
+        "../node_modules/@nestjs/platform-express/index.d.ts",
+        "../node_modules/@types/node/path.d.ts",
         "../src/app.module.ts"
       ],
       "../src/modules/auth/auth.controller.ts": [
