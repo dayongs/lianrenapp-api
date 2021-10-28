@@ -27,7 +27,7 @@ export class UploadService {
   //
   //
   //
-  //   // const updateNewsDto=new UpdateNewsDto()
+  //   // const updateNewsDto=new UpdateMessageDto()
   //   // updateNewsDto.content
   //   //
   //   // return await this.newsService.update(updateNewsDto)

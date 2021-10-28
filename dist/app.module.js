@@ -14,24 +14,17 @@ const typeorm_1 = require("@nestjs/typeorm");
 const news_module_1 = require("./modules/news/news.module");
 const users_module_1 = require("./modules/users/users.module");
 const auth_module_1 = require("./modules/auth/auth.module");
+const messages_module_1 = require("./modules/messages/messages.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
         imports: [
-            typeorm_1.TypeOrmModule.forRoot({
-                type: 'mysql',
-                host: 'localhost',
-                port: 3306,
-                username: 'root',
-                password: '123456',
-                database: 'lianrenapp',
-                entities: [__dirname + '/**/*.entity{.ts,.js}'],
-                synchronize: true,
-            }),
+            typeorm_1.TypeOrmModule.forRoot(),
             news_module_1.NewsModule,
             users_module_1.UsersModule,
             auth_module_1.AuthModule,
+            messages_module_1.MessagesModule,
         ],
         controllers: [
             app_controller_1.AppController,

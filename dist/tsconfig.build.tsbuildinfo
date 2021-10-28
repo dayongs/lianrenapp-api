@@ -2942,7 +2942,7 @@
         "affectsGlobalScope": false
       },
       "../src/modules/news/news.service.ts": {
-        "version": "7e823d2f5e5b6d539311e8824902d2ef90688c54b71ad05937392ee40bb023fc",
+        "version": "14b35fd110fad140677c6c57ddb5e4091011a1719278a89ad544f10641eb5803",
         "signature": "e4fca649782893b00fd2969c8a285e2927bcd0936f8b58c1f928a8def529729f",
         "affectsGlobalScope": false
       },
@@ -2957,7 +2957,7 @@
         "affectsGlobalScope": false
       },
       "../src/modules/news/upload/upload.service.ts": {
-        "version": "4e620096f751f8b72fa2365ff91e340aec6558a4379e9f7815b9958530df903b",
+        "version": "7b7d5461ab252e9a2e3d1f3f6ab1c289e7b0c2a8d7b455d7fa496d0a19e015c7",
         "signature": "342bca8fc49660690b4c6a3bd02ddc798340def22d225e637dfd1070c54fe1cb",
         "affectsGlobalScope": false
       },
@@ -3651,8 +3651,53 @@
         "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
         "affectsGlobalScope": false
       },
+      "../src/modules/messages/message.entity.ts": {
+        "version": "e9158d75ca83db618fde625fed241676100ee3188febcebbfd65f0126aaee0f5",
+        "signature": "3d62cdfe59e37e13f123300c61b0a80202a18c3f0defff7c0511c0550fea8f96",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/messages/dto/find.all.message.dto.ts": {
+        "version": "c65a6f769b8cb585eca4283125ed781a5179987bbfe7d580aaa9143d0aa13719",
+        "signature": "13870385655992f19e30ec2d3598472a4e8b95e7d3b9105d32be5fc5ac9ae64f",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/messages/dto/find.one.message.dto.ts": {
+        "version": "f2573de2d5e896dd5915b6fe0291055b780a34983a9ffec83e4e5776681e90a9",
+        "signature": "8c576643f6d1afbc7fe5aad7c83cae202ff0e81403705833fd66faab43479f24",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/messages/dto/create.message.dto.ts": {
+        "version": "4bebd74956628c8306a325bedbd87e61bd8345d1b8ad0dc1cac86b95437e4050",
+        "signature": "56f18fe67840351f52dca8f40e6c07b1dd2b659b743bea3a151301f3f0d8c953",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/messages/dto/update.message.dto.ts": {
+        "version": "c7083731cb317297aedf3ebb19bab9d7be4a196bd0d4465e98152a975b967cfb",
+        "signature": "72b6fd526fd6ff727a96590e77c9613772edb6c5f056bf58a79afde4ef146449",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/messages/dto/remove.message.dto.ts": {
+        "version": "273d91ffaa5d95958fcef98ef99a7a8c45f58e928f659c5d9e509309d7314fa9",
+        "signature": "3141338aa2aae2560f0a54ac5899f02bdfa89823b95cbd58238e83dd81ba1a0f",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/messages/messages.service.ts": {
+        "version": "e82998e44962fc9eafaefb94a63c9a2f95d0852f0ca260ffdacd0704aa343b04",
+        "signature": "e227abe55c154336f481183c3b2efabd71560402c2110df5e836fd6e49815457",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/messages/messages.controller.ts": {
+        "version": "32082ef11a791fa26085a8114547c4d6156102c64ed2c16d869edfce871e6848",
+        "signature": "0487cc36a68a538f50c7207ee1a1c466d661e8207b1dc4205bb58b51e8575acb",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/messages/messages.module.ts": {
+        "version": "88c2394e88ffc5cd8635910a1a9191c9f36d7ad86a3bf4a51b30901d6a867a95",
+        "signature": "55e4c386bd1e71d457cc2737f6fd6f3bf0ce6ccd4c6f8b6b11e0bc2966cdba45",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "51b1723e389d4127601e33a9b214907c29a060c0c78426b0a1f069a5a08de6c2",
+        "version": "b7b2a72eccec7d21bd45fed885a138a2d5c139c229b870ef96172f222755f24c",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -6920,6 +6965,7 @@
         "../src/app.controller.ts",
         "../src/app.service.ts",
         "../src/modules/auth/auth.module.ts",
+        "../src/modules/messages/messages.module.ts",
         "../src/modules/news/news.module.ts",
         "../src/modules/users/users.module.ts"
       ],
@@ -6968,6 +7014,37 @@
         "../node_modules/@types/passport-jwt/index.d.ts",
         "../src/modules/auth/auth.interface.ts",
         "../src/modules/users/users.service.ts"
+      ],
+      "../src/modules/messages/message.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/modules/messages/messages.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/modules/messages/dto/create.message.dto.ts",
+        "../src/modules/messages/dto/find.all.message.dto.ts",
+        "../src/modules/messages/dto/find.one.message.dto.ts",
+        "../src/modules/messages/dto/remove.message.dto.ts",
+        "../src/modules/messages/dto/update.message.dto.ts",
+        "../src/modules/messages/message.entity.ts",
+        "../src/modules/messages/messages.service.ts"
+      ],
+      "../src/modules/messages/messages.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/modules/messages/message.entity.ts",
+        "../src/modules/messages/messages.controller.ts",
+        "../src/modules/messages/messages.service.ts"
+      ],
+      "../src/modules/messages/messages.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/modules/messages/dto/create.message.dto.ts",
+        "../src/modules/messages/dto/find.all.message.dto.ts",
+        "../src/modules/messages/dto/find.one.message.dto.ts",
+        "../src/modules/messages/dto/remove.message.dto.ts",
+        "../src/modules/messages/dto/update.message.dto.ts",
+        "../src/modules/messages/message.entity.ts"
       ],
       "../src/modules/news/news.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -9956,6 +10033,24 @@
         "../src/modules/users/users.entity.ts",
         "../src/modules/users/users.service.ts"
       ],
+      "../src/modules/messages/messages.controller.ts": [
+        "../src/modules/messages/dto/create.message.dto.ts",
+        "../src/modules/messages/dto/find.all.message.dto.ts",
+        "../src/modules/messages/dto/find.one.message.dto.ts",
+        "../src/modules/messages/dto/remove.message.dto.ts",
+        "../src/modules/messages/dto/update.message.dto.ts",
+        "../src/modules/messages/message.entity.ts",
+        "../src/modules/messages/messages.service.ts"
+      ],
+      "../src/modules/messages/messages.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/modules/messages/dto/create.message.dto.ts",
+        "../src/modules/messages/dto/find.all.message.dto.ts",
+        "../src/modules/messages/dto/find.one.message.dto.ts",
+        "../src/modules/messages/dto/remove.message.dto.ts",
+        "../src/modules/messages/dto/update.message.dto.ts",
+        "../src/modules/messages/message.entity.ts"
+      ],
       "../src/modules/news/news.controller.ts": [
         "../src/modules/news/dto/create.news.dto.ts",
         "../src/modules/news/dto/find.all.news.dto.ts",
@@ -10777,6 +10872,15 @@
       "../src/modules/auth/auth.module.ts",
       "../src/modules/auth/auth.service.ts",
       "../src/modules/auth/strategies/jwt.strategy.ts",
+      "../src/modules/messages/dto/create.message.dto.ts",
+      "../src/modules/messages/dto/find.all.message.dto.ts",
+      "../src/modules/messages/dto/find.one.message.dto.ts",
+      "../src/modules/messages/dto/remove.message.dto.ts",
+      "../src/modules/messages/dto/update.message.dto.ts",
+      "../src/modules/messages/message.entity.ts",
+      "../src/modules/messages/messages.controller.ts",
+      "../src/modules/messages/messages.module.ts",
+      "../src/modules/messages/messages.service.ts",
       "../src/modules/news/dto/create.news.dto.ts",
       "../src/modules/news/dto/find.all.news.dto.ts",
       "../src/modules/news/dto/find.one.news.dto.ts",

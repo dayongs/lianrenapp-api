@@ -96,7 +96,7 @@ export class NewsService {
 
   async create (createNewsDto:CreateNewsDto){
     const news=new NewsEntity()
-    news.content=createNewsDto.tag
+    // news.tag=createNewsDto.tag
     news.content=createNewsDto.content
     news.title=createNewsDto.title
     news.author=createNewsDto.author
