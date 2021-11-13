@@ -8,13 +8,16 @@ import { UsersModule } from './modules/users/users.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { MessagesModule } from './modules/messages/messages.module';
 
+
+
+
 @Module({
   imports: [
     TypeOrmModule.forRoot(
     //   {
     //   type: 'mysql',
     //   host: 'localhost',
-    //   port: 3309,
+    //   port: 3307,
     //   username: 'root',
     //   password: '123456',
     //   database: 'lianrenappcn',
@@ -22,8 +25,17 @@ import { MessagesModule } from './modules/messages/messages.module';
     //   synchronize: true,
     // }
 
-
-
+    //本地
+    // {
+    //   type: 'mysql',
+    //   host: 'localhost',
+    //   port: 3306,
+    //   username: 'root',
+    //   password: '123456',
+    //   database: 'lianrenapp',
+    //   entities: [__dirname + '/**/*.entity{.ts,.js}'],
+    //   synchronize: true,
+    // }
     ),
     NewsModule,
     UsersModule,

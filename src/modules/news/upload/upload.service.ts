@@ -20,7 +20,7 @@ export class UploadService {
   //
   //   const file=createUploadDto.file;
   //   const filename=`${file.fieldname}-${Date.now()}.${file.mimetype.split('/')[1]}`
-  //   const writeImage = createWriteStream(join(__dirname, '..','..','../public/upload', filename))
+  //   const writeImage = createWriteStream(join(__dirname, '..','..','../upload', filename))
   //   writeImage.write(file.buffer)
   //   return filename
   //

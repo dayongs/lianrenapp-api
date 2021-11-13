@@ -28,7 +28,7 @@ export class UploadController {
   ){
     // console.log('22',file);
     const filename=`${file.fieldname}-${Date.now()}.${file.mimetype.split('/')[1]}`
-    const writeImage = createWriteStream(join(__dirname, '..','..','..','../public', filename))//路径产生变化需要修改
+    const writeImage = createWriteStream(join(__dirname, '..','..','..','../uploads', filename))//路径产生变化需要修改
     writeImage.write(file.buffer)
     //const domain =`http://localhost:3001/static/${filename}`//切换
     const domain =`https://cc.qileguai.com/api/static/${filename}`
@@ -52,7 +52,7 @@ export class UploadController {
   // @UseInterceptors(FileInterceptor('file', {
   //   storage: multer.diskStorage({
   //     destination: (req, file, cb) => {
-  //       cb(null, '../../../public/upload');
+  //       cb(null, '../../../upload');
   //     },
   //     filename: (req, file, cb) => {
   //       cb(null, file.originalname);

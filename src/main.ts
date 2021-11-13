@@ -11,14 +11,14 @@ async function bootstrap() {
   // 处理跨域
   app.enableCors();
 
-  // 在根目录创建静态文件 'public'
-  // app.useStaticAssets('public');
+  // 在根目录创建静态文件 'uploads'
+  // app.useStaticAssets('uploads');
 
   //设置虚拟路径
-  app.useStaticAssets(join(__dirname, '..', 'public'),{
+  app.useStaticAssets(join(__dirname, '..', 'uploads'),{
     prefix: '/static/',   //目录地址
   });
 
-  await app.listen(4000);
+  await app.listen(3002);
 }
 bootstrap();

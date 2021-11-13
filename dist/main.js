@@ -6,7 +6,7 @@ const path_1 = require("path");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     app.enableCors();
-    app.useStaticAssets(path_1.join(__dirname, '..', 'public'), {
+    app.useStaticAssets(path_1.join(__dirname, '..', 'uploads'), {
         prefix: '/static/',
     });
     await app.listen(4000);
